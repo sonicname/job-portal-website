@@ -27,12 +27,71 @@ body {
 }
 
 .hero {
-  height: 80rem;
+  padding-bottom: 6rem;
   background: linear-gradient(
     180deg,
     rgba(247, 248, 255, 0) -15.37%,
     #f1f4ff 100%
   );
+
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    font-family: "Sen", sans-serif;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 0;
+
+    h1 {
+      font-size: 6.6rem;
+      font-weight: 700;
+      line-height: 7.2rem;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      color: $gray;
+      line-height: 3rem;
+    }
+  }
+
+  &__search {
+    display: flex;
+    box-shadow: 0px 16px 52px 0px #00000012;
+
+    input {
+      font-size: 1.8rem;
+      font-weight: 600;
+      width: 100%;
+      padding: 0.8rem 1.4rem;
+      outline: none;
+      border: none;
+    }
+
+    &-btn {
+      padding: 2.3rem;
+      background: $orange;
+    }
+  }
+
+  &__image {
+    width: 110rem;
+    transform: scale(1.2);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .header {
@@ -112,5 +171,65 @@ body {
   &-secondary {
     color: $black;
     border: 1px solid $black;
+  }
+}
+
+.banner {
+  width: 100%;
+  margin-top: 10rem;
+  font-family: "Sen", sans-serif;
+  padding: 2rem;
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+  }
+
+  &__subtitle {
+    margin-top: 1.6rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: $gray;
+  }
+
+  &__showcase {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 3rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem 0;
+  padding: 5rem;
+  transition: all 0.2s linear;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+
+  &__icon {
+    width: 8.8rem;
+    height: 8.8rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0px 18px 56px 0px #0000000d;
   }
 }
