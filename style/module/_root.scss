@@ -1,0 +1,21 @@
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "Sen", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
