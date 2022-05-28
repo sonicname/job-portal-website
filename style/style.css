@@ -399,7 +399,6 @@ body {
 
 .jobs {
   margin-top: 18rem;
-  padding-bottom: 18rem;
 }
 .jobs__header {
   text-align: center;
@@ -509,6 +508,63 @@ body {
 }
 .jobs__btn:hover {
   opacity: 0.8;
+}
+
+.author {
+  margin-top: 18rem;
+}
+.author__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 13rem;
+}
+.author__img {
+  max-width: 47rem;
+  max-height: 51rem;
+}
+.author__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.author__title {
+  display: inline-block;
+  max-width: 46.6rem;
+  font-weight: 700;
+  font-size: 4.6rem;
+  line-height: 5.6rem;
+}
+.author__subtitle {
+  display: inline-block;
+  max-width: 57rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 7rem;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  font-weight: 500;
+  color: #5e626e;
+}
+.author__info {
+  margin-top: 3.8rem;
+}
+.author__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.author__jobs {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #5e626f;
+}
+
+.footer {
+  margin-top: 18rem;
 }
 
 /*# sourceMappingURL=style.css.map */
