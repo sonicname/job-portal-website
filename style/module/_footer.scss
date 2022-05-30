@@ -1,6 +1,5 @@
 .footer {
   margin-top: 18rem;
-  height: 42rem;
   background: $black;
 
   &__container {
@@ -10,6 +9,7 @@
   }
 
   &__wrapper {
+    padding: 5rem;
     flex: 1;
     display: flex;
     justify-content: space-between;

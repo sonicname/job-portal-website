@@ -143,6 +143,17 @@ body {
   width: 8.3rem;
   height: 3.6rem;
 }
+.header__hamburger {
+  flex-direction: column;
+  gap: 0.5rem 0;
+  display: none;
+}
+.header__hamburger span {
+  background: #1e253a;
+  display: block;
+  width: 3.5rem;
+  height: 0.4rem;
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -565,7 +576,6 @@ body {
 
 .footer {
   margin-top: 18rem;
-  height: 42rem;
   background: rgb(12, 17, 34);
 }
 .footer__container {
@@ -574,6 +584,7 @@ body {
   flex-direction: column;
 }
 .footer__wrapper {
+  padding: 5rem;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -640,6 +651,62 @@ body {
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: center;
+}
+
+@media screen and (max-width: 766px) {
+  .header {
+    position: relative;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__hamburger {
+    display: flex;
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__image {
+    display: none;
+  }
+
+  .banner__showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem 0;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem 0;
+  }
+
+  .category__content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .jobs__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .author__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem 0;
+  }
+
+  .footer__wrapper {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
