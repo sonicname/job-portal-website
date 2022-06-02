@@ -4,37 +4,31 @@
 
   &__container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    @include column;
   }
 
   &__wrapper {
     padding: 5rem;
     flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include space-between;
   }
 
   &__icons {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 1.8rem 0;
 
     &-list {
       display: flex;
       gap: 0 1.6rem;
       img {
-        width: 3rem;
-        height: 3rem;
+        @include size(3rem);
         object-fit: cover;
       }
     }
   }
 
   &__img {
-    width: 8.3rem;
-    height: 3.6rem;
+    @include size(8.3rem, 3.6rem);
   }
 
   &__list {
@@ -47,31 +41,23 @@
     }
 
     &-subtitle {
-      display: flex;
-      flex-direction: column;
+      @include column;
       gap: 0.6rem 0;
     }
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 1.8rem 0;
 
     &-title {
       font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-size: 1.6rem;
-      line-height: 2.8rem;
-      color: white;
+      @include font-full-setting(600, 1.6rem, 2.8rem, $white);
     }
 
     &-subtitle {
       font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      font-size: 1.4rem;
-      line-height: 2.6rem;
-      color: #b3b7c5;
+      @include font-full-setting(300, 1.4rem, 2.6rem, #b3b7c5);
     }
   }
 
@@ -81,9 +67,7 @@
     color: #70737c;
     p {
       font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 2.6rem;
+      @include font-medium-setting(400, 1.4rem, 2.6rem);
       text-align: center;
     }
   }

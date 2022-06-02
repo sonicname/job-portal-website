@@ -13,10 +13,8 @@
 
   .hero {
     &__container {
-      display: flex;
+      @include flex-center;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     &__image {
@@ -26,25 +24,21 @@
 
   .banner {
     &__showcase {
-      display: flex;
-      flex-direction: column;
+      @include column;
       gap: 5rem 0;
     }
   }
 
   .about {
     &__container {
-      display: flex;
-      flex-direction: column;
+      @include column;
       gap: 5rem 0;
     }
   }
 
   .category {
     &__content {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
+      @include grid(2, 2);
       gap: 3rem;
     }
   }
@@ -58,8 +52,7 @@
 
   .author {
     &__container {
-      display: flex;
-      flex-direction: column;
+      @include column;
       gap: 5rem 0;
     }
   }

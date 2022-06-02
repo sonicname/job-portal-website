@@ -1,8 +1,6 @@
 .card {
-  display: flex;
+  @include flex-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 3.8rem 0;
   padding: 5rem;
   transition: all 0.1s linear;
@@ -11,14 +9,11 @@
   border-radius: 1rem;
 
   &__icon {
-    width: 8.8rem;
-    height: 8.8rem;
+    @include size(8.8rem);
   }
 
   &__title {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 3rem;
+    @include font-medium-setting(600, 2rem, 3rem);
     text-align: center;
   }
 
